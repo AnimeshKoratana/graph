@@ -18,7 +18,7 @@ public abstract class TestMapMaker{
     public static void main(String args[]) {
         Graph inputMap = makeTestMap();
         PopulationMaker pm = new PopulationMaker(inputMap);
-        TreeMap<Double, ArrayList<Path>> population= pm.generate(100000);
+        TreeMap<Double, ArrayList<Path>> population= pm.generate(5);
         pm.showPopulation(population);
 
 //    	Path path = pm.getValidPath();
